@@ -1,15 +1,20 @@
 {
-  "name": "storybook-addon-kit",
+  "name": "storybook-addon-manual-mocks",
   "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "description": "Add ability to add mocks similar to Manual Jest Mocks",
   "keywords": [
+    "manual-mocks",
+    "manual-mock",
+    "mocks",
+    "mock",
+    "test",
     "storybook-addons"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/gebeto/storybook-addon-manual-mocks"
   },
-  "author": "package-author",
+  "author": "gebeto <slavik.nychkalo@gmail.com>",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -21,7 +26,6 @@
     "*.d.ts"
   ],
   "scripts": {
-    "postinstall": "node scripts/welcome.js",
     "clean": "rimraf ./dist",
     "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
     "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
@@ -52,7 +56,6 @@
     "concurrently": "^6.2.0",
     "dedent": "^0.7.0",
     "prettier": "^2.3.1",
-    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rimraf": "^3.0.2",
@@ -80,9 +83,21 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "Addon Kit",
+    "displayName": "Manual Mocks",
     "supportedFrameworks": [
-      "supported-frameworks"
+      "react",
+      "vue",
+      "angular",
+      "web-components",
+      "ember",
+      "html",
+      "svelte",
+      "preact",
+      "aurelia",
+      "marionette",
+      "react-native",
+      "typescript",
+      "webpack"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   }

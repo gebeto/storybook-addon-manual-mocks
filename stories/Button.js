@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./button.css";
 
+import { useSomeData } from "./useSomeData";
+
 /**
  * Primary UI component for user interaction
  */
@@ -9,16 +11,17 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
+  const data = useSomeData();
   return (
     <button
       type="button"
       className={["storybook-button", `storybook-button--${size}`, mode].join(
         " "
       )}
-      style={backgroundColor && { backgroundColor }}
+      style={backgroundColor ? { backgroundColor } : undefined}
       {...props}
     >
-      {label}
+      {label} | {data}
     </button>
   );
 };
