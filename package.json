@@ -2,6 +2,11 @@
   "name": "storybook-addon-manual-mocks",
   "version": "0.0.1",
   "description": "Add ability to add mocks similar to Manual Jest Mocks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gebeto/storybook-addon-manual-mocks"
+  },
+  "author": "gebeto",
   "keywords": [
     "manual-mocks",
     "manual-mock",
@@ -10,11 +15,25 @@
     "test",
     "storybook-addons"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gebeto/storybook-addon-manual-mocks"
+  "storybook": {
+    "displayName": "Manual Mocks",
+    "supportedFrameworks": [
+      "react",
+      "vue",
+      "angular",
+      "web-components",
+      "ember",
+      "html",
+      "svelte",
+      "preact",
+      "aurelia",
+      "marionette",
+      "react-native",
+      "typescript",
+      "webpack"
+    ],
+    "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
-  "author": "gebeto <slavik.nychkalo@gmail.com>",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -81,24 +100,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "storybook": {
-    "displayName": "Manual Mocks",
-    "supportedFrameworks": [
-      "react",
-      "vue",
-      "angular",
-      "web-components",
-      "ember",
-      "html",
-      "svelte",
-      "preact",
-      "aurelia",
-      "marionette",
-      "react-native",
-      "typescript",
-      "webpack"
-    ],
-    "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   }
 }
