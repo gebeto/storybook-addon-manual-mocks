@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-manual-mocks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add ability to add mocks similar to Manual Jest Mocks",
   "repository": {
     "type": "git",
