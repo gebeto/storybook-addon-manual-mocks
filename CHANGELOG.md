@@ -1,3 +1,15 @@
+# v0.0.3 (Sat Sep 24 2022)
+
+#### ⚠️ Pushed to `main`
+
+- update addon description ([@gebeto](https://github.com/gebeto))
+
+#### Authors: 1
+
+- Slavik Nychkalo ([@gebeto](https://github.com/gebeto))
+
+---
+
 # v0.0.2 (Sat Sep 24 2022)
 
 #### ⚠️ Pushed to `main`
