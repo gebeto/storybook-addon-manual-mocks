@@ -1,7 +1,7 @@
 {
   "name": "storybook-addon-manual-mocks",
   "version": "0.0.2",
-  "description": "Add ability to add mocks similar to Manual Jest Mocks",
+  "description": "Mock your imports in the same way as Jest Manual Mocks do",
   "repository": {
     "type": "git",
     "url": "https://github.com/gebeto/storybook-addon-manual-mocks"
