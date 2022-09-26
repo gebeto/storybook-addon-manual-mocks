@@ -52,7 +52,7 @@ import { useSomeData } from './MyComponent.hooks';
 // ✅ this CAN be mocked
 import { useSomeData } from '../MyComppnent/MyComponent.hooks';
 
-// ⚠️ this CAN'T be mocked
+// ⛔️ this CAN'T be mocked
 import { useSomeData } from '@monorepo/components/MyComponent/MyComponent.hooks';
 
 // ✅ this CAN be mocked
