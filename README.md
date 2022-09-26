@@ -37,8 +37,8 @@ MyComponent
 When you will import `MyComponent.hooks` in `MyComponent.component.js`, file from `__mocks__` directory will be used
 
 ```js
-// it will import '__mocks__/MyComponent.hooks' instead
 import { useSomeData } from 'MyComponent.hooks';
+// it will import           '__mocks__/MyComponent.hooks' instead
 ```
 
 
@@ -46,7 +46,7 @@ import { useSomeData } from 'MyComponent.hooks';
 
 This addon works only with relative imports(`./` or `../`) for example
 ```js
- // ✅ this CAN be mocked
+// ✅ this CAN be mocked
 import { useData } from './useData';
 
 // ✅ this CAN be mocked
