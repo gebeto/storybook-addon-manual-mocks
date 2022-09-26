@@ -7,6 +7,8 @@ Install this addon by adding the `storybook-addon-manual-mocks` dependency:
 
 ```sh
 yarn add -D storybook-addon-manual-mocks
+# or
+npm install --save-dev storybook-addon-manual-mocks
 ```
 
 within `.storybook/main.js`:
