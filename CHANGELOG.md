@@ -1,3 +1,15 @@
+# v0.0.5 (Mon Sep 26 2022)
+
+#### ⚠️ Pushed to `main`
+
+- update metadata list of supprted frameworks ([@gebeto](https://github.com/gebeto))
+
+#### Authors: 1
+
+- Slavik Nychkalo ([@gebeto](https://github.com/gebeto))
+
+---
+
 # v0.0.4 (Mon Sep 26 2022)
 
 #### 🐛 Bug Fix
