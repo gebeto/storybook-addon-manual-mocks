@@ -7,7 +7,9 @@ Install this addon by adding the `storybook-addon-manual-mocks` dependency:
 
 ```sh
 yarn add -D storybook-addon-manual-mocks
+
 # or
+
 npm install --save-dev storybook-addon-manual-mocks
 ```
 
@@ -59,6 +61,6 @@ import { useSomeData } from '@monorepo/components/MyComponent/MyComponent.hooks'
 
 // ✅ this CAN be mocked
 // Because inside the package, MyComponent.hooks was imported relatively
-// by `MyComponent/index.js`, so it will be mocked correctly
+// `./MyComponent.hooks` by `MyComponent/index.js`, so it will be mocked correctly
 import { useSomeData } from '@monorepo/components';
 ```
