@@ -34,11 +34,11 @@ MyComponent
 ```
 
 
-When you will import `MyComponent.hooks` in `MyComponent.component.js`, file from `__mocks__` directory will be used
+When you will import `MyComponent.hooks` in `MyComponent.component.js`, file from `__mocks__` directory will be used instead
 
 ```js
 import { useSomeData } from 'MyComponent.hooks';
-// it will import           '__mocks__/MyComponent.hooks' instead
+// it will import mock under the hood '__mocks__/MyComponent.hooks';
 ```
 
 
@@ -47,11 +47,16 @@ import { useSomeData } from 'MyComponent.hooks';
 This addon works only with relative imports(`./` or `../`) for example
 ```js
 // ✅ this CAN be mocked
-import { useData } from './useData';
+import { useSomeData } from './MyComponent.hooks';
 
 // ✅ this CAN be mocked
-import { useListInfo } from '../ParentComponent/useListInfo';
+import { useSomeData } from '../MyComppnent/MyComponent.hooks';
 
 // ⚠️ this CAN'T be mocked
-import { useLibHook } from '@monorepo/hooks';
+import { useSomeData } from '@monorepo/components/MyComponent/MyComponent.hooks';
+
+// ✅ this CAN be mocked
+// Because inside the package, MyComponent.hooks was imported relatively
+// by `MyComponent/index.js`, so it will be mocked correctly
+import { useSomeData } from '@monorepo/components';
 ```
