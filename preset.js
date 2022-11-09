@@ -35,7 +35,7 @@ module.exports = {
           MOCKS_DIRECTORY,
           prs.base
         );
-        for (let ext in EXTENSIONS) {
+        for (let ext of EXTENSIONS) {
           const isReplacementPathExists = fs.existsSync(mockedPath + ext);
           if (isReplacementPathExists) {
             const newImportPath =
