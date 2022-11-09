@@ -1,3 +1,15 @@
+# v0.0.6 (Wed Nov 09 2022)
+
+#### 🐛 Bug Fix
+
+- Fix the case with upper folders. [#2](https://github.com/gebeto/storybook-addon-manual-mocks/pull/2) ([@alitskevich](https://github.com/alitskevich))
+
+#### Authors: 1
+
+- Alex Litskevich ([@alitskevich](https://github.com/alitskevich))
+
+---
+
 # v0.0.5 (Mon Sep 26 2022)
 
 #### ⚠️ Pushed to `main`
