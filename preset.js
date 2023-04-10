@@ -55,14 +55,14 @@ module.exports = {
     function parcelMocksPlugin() {
       return {
         name: "mocks-plugin",
-        load(importPath) {
+        load(_importPath) {
+          const importPath = _importPath.replace(/\0/g, "");
           const basePath = path.parse(importPath);
           const mockPath = path.join(basePath.dir, "__mocks__", basePath.base);
           const isReplacementPathExists = fs.existsSync(mockPath);
           if (isReplacementPathExists) {
             return fs.readFileSync(mockPath, { encoding: "utf8" });
           }
-          return fs.readFileSync(importPath, { encoding: "utf8" });
         },
       };
     }

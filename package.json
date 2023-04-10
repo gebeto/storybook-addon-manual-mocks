@@ -53,7 +53,8 @@
     "storybook:webpack": "start-storybook -p 6006 --config-dir .storybook-webpack",
     "storybook:vite": "start-storybook -p 6006 --config-dir .storybook-vite",
     "start": "concurrently \"yarn build:watch\" \"yarn storybook -- --no-manager-cache --quiet\"",
-    "build-storybook": "build-storybook",
+    "build-storybook:webpack": "build-storybook --config-dir .storybook-webpack",
+    "build-storybook:vite": "build-storybook --config-dir .storybook-vite",
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "yarn build && auto shipit",
     "eject-ts": "zx scripts/eject-typescript.mjs"
