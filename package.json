@@ -83,21 +83,11 @@
     "zx": "^1.14.1"
   },
   "peerDependencies": {
-    "@storybook/addons": "^6.5.8",
-    "@storybook/api": "^6.5.8",
-    "@storybook/components": "^6.5.8",
-    "@storybook/core-events": "^6.5.8",
-    "@storybook/theming": "^6.5.8",
-    "react": "^16.8.0 || ^17.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
-  },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": true
-    },
-    "react-dom": {
-      "optional": true
-    }
+    "@storybook/addons": "^6",
+    "@storybook/api": "^6",
+    "@storybook/components": "^6",
+    "@storybook/core-events": "^6",
+    "@storybook/theming": "^6"
   },
   "publishConfig": {
     "access": "public"
