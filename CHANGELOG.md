@@ -1,3 +1,22 @@
+# v0.0.8 (Mon Apr 10 2023)
+
+#### 🐛 Bug Fix
+
+- Storybook v7 Support [#4](https://github.com/gebeto/storybook-addon-manual-mocks/pull/4) ([@gebeto](https://github.com/gebeto))
+
+#### ⚠️ Pushed to `main`
+
+- fix ci ([@gebeto](https://github.com/gebeto))
+- fix zx ([@gebeto](https://github.com/gebeto))
+- update yarn lock ([@gebeto](https://github.com/gebeto))
+- update CI node version from 14 to 16 ([@gebeto](https://github.com/gebeto))
+
+#### Authors: 1
+
+- Slavik Nychkalo ([@gebeto](https://github.com/gebeto))
+
+---
+
 # v0.0.7 (Mon Apr 10 2023)
 
 #### 🐛 Bug Fix
