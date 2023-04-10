@@ -1,12 +1,12 @@
-const webpack = require("webpack");
 const path = require("path");
 const fs = require("fs");
 
-const MOCKS_DIRECTORY = "__mocks__";
-const EXTENSIONS = [".ts", ".js"];
-
 module.exports = {
   webpackFinal: (config) => {
+    const webpack = require("webpack");
+    const MOCKS_DIRECTORY = "__mocks__";
+    const EXTENSIONS = [".ts", ".js"];
+
     config.plugins.push(
       new webpack.NormalModuleReplacementPlugin(/^\.\//, async (resource) => {
         const mockedPath = path.resolve(
@@ -48,5 +48,27 @@ module.exports = {
     );
 
     return config;
+  },
+
+  async viteFinal(config) {
+    const { mergeConfig } = await import("vite");
+    function parcelMocksPlugin() {
+      return {
+        name: "mocks-plugin",
+        load(importPath) {
+          const basePath = path.parse(importPath);
+          const mockPath = path.join(basePath.dir, "__mocks__", basePath.base);
+          const isReplacementPathExists = fs.existsSync(mockPath);
+          if (isReplacementPathExists) {
+            return fs.readFileSync(mockPath, { encoding: "utf8" });
+          }
+          return fs.readFileSync(importPath, { encoding: "utf8" });
+        },
+      };
+    }
+
+    return mergeConfig(config, {
+      plugins: [parcelMocksPlugin()],
+    });
   },
 };
