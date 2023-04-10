@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-manual-mocks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mock your imports in the same way as Jest Manual Mocks do",
   "repository": {
     "type": "git",
