@@ -65,7 +65,6 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
     "@babel/preset-typescript": "^7.13.0",
-    "@storybook/addon-essentials": "^6.5.8",
     "@storybook/builder-vite": "^0.4.2",
     "@storybook/react": "^6.5.8",
     "@vitejs/plugin-react": "^3.1.0",
@@ -81,13 +80,6 @@
     "typescript": "^4.2.4",
     "vite": "^4.2.1",
     "zx": "^1.14.1"
-  },
-  "peerDependencies": {
-    "@storybook/addons": "^6",
-    "@storybook/api": "^6",
-    "@storybook/components": "^6",
-    "@storybook/core-events": "^6",
-    "@storybook/theming": "^6"
   },
   "publishConfig": {
     "access": "public"
