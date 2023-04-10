@@ -1,3 +1,15 @@
+# v0.0.7 (Mon Apr 10 2023)
+
+#### 🐛 Bug Fix
+
+- Vite Support [#5](https://github.com/gebeto/storybook-addon-manual-mocks/pull/5) ([@gebeto](https://github.com/gebeto))
+
+#### Authors: 1
+
+- Slavik Nychkalo ([@gebeto](https://github.com/gebeto))
+
+---
+
 # v0.0.6 (Wed Nov 09 2022)
 
 #### 🐛 Bug Fix
