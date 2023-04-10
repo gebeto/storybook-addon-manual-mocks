@@ -1,10 +1,11 @@
 const path = require("path");
 const fs = require("fs");
 
+const MOCKS_DIRECTORY = "__mocks__";
+
 module.exports = {
   webpackFinal: (config) => {
     const webpack = require("webpack");
-    const MOCKS_DIRECTORY = "__mocks__";
     const EXTENSIONS = [".ts", ".js"];
 
     config.plugins.push(
@@ -58,7 +59,11 @@ module.exports = {
         load(_importPath) {
           const importPath = _importPath.replace(/\0/g, "");
           const basePath = path.parse(importPath);
-          const mockPath = path.join(basePath.dir, "__mocks__", basePath.base);
+          const mockPath = path.join(
+            basePath.dir,
+            MOCKS_DIRECTORY,
+            basePath.base
+          );
           const isReplacementPathExists = fs.existsSync(mockPath);
           if (isReplacementPathExists) {
             return fs.readFileSync(mockPath, { encoding: "utf8" });
