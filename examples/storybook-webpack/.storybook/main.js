@@ -17,5 +17,8 @@ const config = {
     autodocs: "tag",
   },
   staticDirs: ["../public"],
+  manualMocks: {
+    mocksName: "__mocks__",
+  },
 };
 export default config;

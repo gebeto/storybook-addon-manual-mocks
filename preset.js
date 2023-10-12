@@ -4,8 +4,8 @@ const fs = require("fs");
 const MOCKS_DIRECTORY = "__mocks__";
 
 module.exports = {
-  webpackFinal: (config, ...args) => {
-    console.log(" >>>> ARGS", args);
+  webpackFinal: (config, context) => {
+    console.log(" >>>> ARGS", context);
     const webpack = require("webpack");
     const EXTENSIONS = [".ts", ".js"];
 
