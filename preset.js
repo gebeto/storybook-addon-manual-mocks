@@ -4,7 +4,8 @@ const fs = require("fs");
 const MOCKS_DIRECTORY = "__mocks__";
 
 module.exports = {
-  webpackFinal: (config) => {
+  webpackFinal: (config, ...args) => {
+    console.log(" >>>> ARGS", args);
     const webpack = require("webpack");
     const EXTENSIONS = [".ts", ".js"];
 
@@ -51,7 +52,8 @@ module.exports = {
     return config;
   },
 
-  async viteFinal(config) {
+  async viteFinal(config, ...args) {
+    console.log(" >>>> ARGS", args);
     const { mergeConfig } = await import("vite");
     function parcelMocksPlugin() {
       return {
