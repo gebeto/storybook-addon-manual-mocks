@@ -63,7 +63,7 @@ module.exports = {
 
 | Name          | Type     | Default       | Description |
 |---------------|----------|---------------|-------------|
-| `mocksFolder` | `string` | `"__mocks__"` | Custom mocks folder name |
+| `mocksFolder` | `string` | `"__mocks__"` | Custom mocks folder |
 
 
 ## How to use
