@@ -7,7 +7,7 @@ const config = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
-    "storybook-addon-manual-mocks",
+    "storybook-addon-manual-mocks/webpack",
   ],
   framework: {
     name: "@storybook/react-webpack5",
