@@ -19,23 +19,53 @@ within `.storybook/main.js`:
 ### Universal config for vite and webpack
 ```js
 module.exports = {
-  addons: ['storybook-addon-manual-mocks'],
+  addons: [
+    {
+      name: "storybook-addon-manual-mocks",
+      options: {
+        mocksFolder: "__mocks__",
+      }
+    }
+  ],
 };
 ```
 
 ### Specific `vite` config
 ```js
 module.exports = {
-  addons: ['storybook-addon-manual-mocks/vite'],
+  addons: [
+    {
+      name: "storybook-addon-manual-mocks/vite",
+      options: {
+        mocksFolder: "__mocks__",
+      }
+    }
+  ],
 };
 ```
 
 ### Specific `webpack` config
 ```js
 module.exports = {
-  addons: ['storybook-addon-manual-mocks/webpack'],
+  addons: [
+    {
+      name: "storybook-addon-manual-mocks/webpack",
+      options: {
+        mocksFolder: "__mocks__",
+      }
+    }
+  ],
 };
 ```
+
+
+## Available `options`
+
+| Name        | Type   | Default   |
+|-------------|--------|-----------|
+| mocksFolder | string | __mocks__ |
+|             |        |           |
+|             |        |           |
 
 
 ## How to use
