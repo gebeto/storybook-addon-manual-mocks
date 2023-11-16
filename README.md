@@ -61,10 +61,9 @@ module.exports = {
 
 ## Available `options`
 
-| Name          | Type     | Default       |
-|---------------|----------|---------------|
-| `mocksFolder` | `string` | `"__mocks__"` |
-|---------------|----------|---------------|
+| Name          | Type     | Default       | Description |
+|---------------|----------|---------------|-------------|
+| `mocksFolder` | `string` | `"__mocks__"` | Custom mocks folder name |
 
 
 ## How to use
