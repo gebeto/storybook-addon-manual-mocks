@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-manual-mocks",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Mock your imports in the same way as Jest Manual Mocks do",
   "repository": {
     "type": "git",
@@ -50,11 +50,7 @@
     "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
     "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook:webpack": "storybook dev -p 6006 --config-dir .storybook-webpack",
-    "storybook:vite": "storybook dev -p 6006 --config-dir .storybook-vite",
     "start": "concurrently \"yarn build:watch\" \"yarn storybook -- --no-manager-cache --quiet\"",
-    "build-storybook:webpack": "build-storybook --config-dir .storybook-webpack",
-    "build-storybook:vite": "build-storybook --config-dir .storybook-vite",
     "prerelease": "zx scripts/prepublish-checks.mjs",
     "release": "yarn build && auto shipit",
     "eject-ts": "zx scripts/eject-typescript.mjs"
@@ -76,8 +72,8 @@
     "rimraf": "^3.0.2",
     "typescript": "^4.2.4",
     "zx": "^1.14.1",
-    "vite": "^4.4.11",
-    "webpack": "^5.88.2"
+    "webpack": "^5.88.2",
+    "vite": "^4.4.11"
   },
   "publishConfig": {
     "access": "public"

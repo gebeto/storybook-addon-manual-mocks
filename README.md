@@ -15,9 +15,25 @@ npm install --save-dev storybook-addon-manual-mocks
 
 within `.storybook/main.js`:
 
+
+### Universal config for vite and webpack
 ```js
 module.exports = {
   addons: ['storybook-addon-manual-mocks'],
+};
+```
+
+### Specific `vite` config
+```js
+module.exports = {
+  addons: ['storybook-addon-manual-mocks/vite'],
+};
+```
+
+### Specific `webpack` config
+```js
+module.exports = {
+  addons: ['storybook-addon-manual-mocks/webpack'],
 };
 ```
 
