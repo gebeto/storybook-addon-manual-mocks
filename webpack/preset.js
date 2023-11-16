@@ -1,12 +1,11 @@
 const path = require("path");
 const fs = require("fs");
 
-const MOCKS_DIRECTORY = "__mocks__";
-
 module.exports = {
   webpackFinal: (config, context) => {
     const webpack = require("webpack");
     const EXTENSIONS = [".ts", ".js"];
+    const MOCKS_DIRECTORY = context.mocksFolder || "__mocks__";
 
     config.plugins.push(
       new webpack.NormalModuleReplacementPlugin(/^\.\//, async (resource) => {

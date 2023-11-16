@@ -4,8 +4,10 @@ const fs = require("fs");
 const MOCKS_DIRECTORY = "__mocks__";
 
 module.exports = {
-  async viteFinal(config, ...args) {
+  async viteFinal(config, context) {
     const { mergeConfig } = await import("vite");
+    const MOCKS_DIRECTORY = context.mocksFolder || "__mocks__";
+
     function parcelMocksPlugin() {
       return {
         name: "mocks-plugin",
