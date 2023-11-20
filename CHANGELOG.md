@@ -1,3 +1,15 @@
+# v1.0.3 (Mon Nov 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- remove all dev dependencies, use auto shipit directly in github action ([@gebeto](https://github.com/gebeto))
+
+#### Authors: 1
+
+- Slavik Nychkalo ([@gebeto](https://github.com/gebeto))
+
+---
+
 # v1.0.2 (Mon Nov 20 2023)
 
 #### 🐛 Bug Fix
