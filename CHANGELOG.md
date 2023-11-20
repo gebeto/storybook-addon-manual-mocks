@@ -1,3 +1,15 @@
+# v1.0.2 (Mon Nov 20 2023)
+
+#### 🐛 Bug Fix
+
+- cleanup project, remove extra build steps, remove extra files [#12](https://github.com/gebeto/storybook-addon-manual-mocks/pull/12) ([@gebeto](https://github.com/gebeto))
+
+#### Authors: 1
+
+- Slavik Nychkalo ([@gebeto](https://github.com/gebeto))
+
+---
+
 # v0.1.2 (Thu Nov 16 2023)
 
 #### 🐛 Bug Fix
