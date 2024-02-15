@@ -45,7 +45,7 @@
     "release": "auto shipit"
   },
   "peerDependencies": {
-    "vite": "^4",
+    "vite": "^4 || ^5",
     "webpack": "^5"
   },
   "peerDependenciesMeta": {
