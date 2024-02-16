@@ -1,3 +1,15 @@
+# v1.0.4 (Fri Feb 16 2024)
+
+#### 🐛 Bug Fix
+
+- Allow to use this package with any version of vite or webpack [#16](https://github.com/gebeto/storybook-addon-manual-mocks/pull/16) ([@gebeto](https://github.com/gebeto))
+
+#### Authors: 1
+
+- Yaroslav Nychkalo ([@gebeto](https://github.com/gebeto))
+
+---
+
 # v1.0.3 (Mon Nov 20 2023)
 
 #### ⚠️ Pushed to `main`
