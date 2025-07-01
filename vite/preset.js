@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const createManualMocksPlugin = (mocksDirectoryPath) => {
+const createViteManualMocksPlugin = (mocksDirectoryPath) => {
   return function parcelManualMocksPlugin() {
     return {
       name: "manual-mocks-plugin",
@@ -25,7 +25,7 @@ const createManualMocksPlugin = (mocksDirectoryPath) => {
 module.exports = {
   async viteFinal(config, context) {
     const { mergeConfig } = await import("vite");
-    const parcelManualMocksPlugin = createManualMocksPlugin(
+    const parcelManualMocksPlugin = createViteManualMocksPlugin(
       context.mocksFolder || "__mocks__"
     );
 
