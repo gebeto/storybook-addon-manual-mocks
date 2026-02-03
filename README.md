@@ -1,5 +1,5 @@
 > [!CAUTION]
-> This library is archived because Storybook already provided almost the same Mocking mechanism
+> This library is not maintained anymore, archived because Storybook already provided almost the same Mocking mechanism
 > https://storybook.js.org/docs/writing-stories/mocking-data-and-modules/mocking-modules#mock-files
 
 # Storybook Addon Manual Mocks
