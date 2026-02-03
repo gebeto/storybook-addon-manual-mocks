@@ -1,3 +1,7 @@
+> [!CAUTION]
+> This library is archived because Storybook already provided almost the same Mocking mechanism
+> https://storybook.js.org/docs/writing-stories/mocking-data-and-modules/mocking-modules#mock-files
+
 # Storybook Addon Manual Mocks
 The Storybook Manual Mocks addon can be used to Mocking your imports as [Manual Mocks in Jest](https://jestjs.io/docs/manual-mocks)
 
