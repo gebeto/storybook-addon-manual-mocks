@@ -3,7 +3,7 @@ name: Release
 on:
   workflow_dispatch:
   push:
-    branches: 
+    branches:
       - main
 
 jobs:
@@ -29,5 +29,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          yarn global add auto@^10.3.0
+          yarn global add auto@^11.3.6
           auto shipit
